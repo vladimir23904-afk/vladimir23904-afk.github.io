@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plecta | Испанский язык: Логика и Грамматика</title>
-    <meta name="description" content="Структурированный курс испанского языка. Грамматика, частотный словарь и разговорная практика. Без детских игр, только результат.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="description" content="Структурированный курс испанского языка. Грамматика, частотный словарь. Без детских игр, только результат.">
     <link rel="stylesheet" href="style.css">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -19,6 +17,7 @@
         <div class="lang-switch">
             <a href="index.html">EN</a>
             <a href="ru.html" class="active">RU</a>
+            <a href="uz.html">UZ</a>
         </div>
         <h1>Plecta</h1>
         <p class="subtitle">Испанский. Структурно. Логично.</p>
@@ -29,25 +28,27 @@
         <p>Большинство приложений заставляют вас заучивать фразы, не объясняя правил. Plecta создана для тех, кто хочет понимать <strong>как работает язык</strong>.</p>
         <p>Мы объединили академический подход к <strong>грамматике</strong> с современными технологиями запоминания.</p>
         
-        <!--<a href="LINK_TO_GOOGLE_PLAY" class="btn-download"><i class="fab fa-google-play"></i> Скачать в Google Play</a>-->
+        <div class="badge-coming-soon">
+            <i class="fas fa-hammer"></i> Скоро в Google Play
+        </div>
     </section>
 
     <section class="features">
         <div class="feature-card">
             <h3><i class="fas fa-book"></i> Понятная Теория</h3>
-            <p>Перед каждым уроком — подробный разбор грамматики. Мы объясняем спряжения, времена и артикли простым языком, а не заставляем вас догадываться.</p>
+            <p>Перед каждым уроком — подробный разбор грамматики. Мы объясняем спряжения, времена и артикли простым языком.</p>
         </div>
         <div class="feature-card">
             <h3><i class="fas fa-list-ol"></i> Умный Словарь</h3>
-            <p>5000 самых важных слов. Создавайте свои папки, добавляйте свои слова или импортируйте готовые наборы по уровням (A1-B2).</p>
+            <p>Почти 5000 самых важных слов. Создавайте свои папки, добавляйте свои слова или импортируйте готовые наборы по уровням.</p>
         </div>
         <div class="feature-card">
-            <h3><i class="fas fa-microphone"></i> Разговорная практика</h3>
-            <p>Используйте микрофон для отработки произношения. Приложение понимает, что вы говорите, и помогает исправить акцент.</p>
+            <h3><i class="fas fa-pencil-alt"></i> Разные виды тренировок</h3>
+            <p>Не просто "выбери правильный ответ". Пишите перевод вручную, составляйте пары, проходите тесты.</p>
         </div>
         <div class="feature-card">
-            <h3><i class="fas fa-cloud"></i> Синхронизация</h3>
-            <p>Ваш прогресс сохраняется в облаке. Вход без регистрации по Email — мы уважаем вашу приватность.</p>
+            <h3><i class="fas fa-wifi"></i> Офлайн режим</h3>
+            <p>Учитесь в самолете, метро или на природе. Интернет нужен только для первоначальной загрузки курса.</p>
         </div>
     </section>
 
@@ -58,8 +59,7 @@
         <ul>
             <li><span class="highlight">Приоритет логики:</span> Вы должны понимать структуру предложения, а не просто жать на кнопки.</li>
             <li><span class="highlight">Реальный контекст:</span> Фразы, которые пригодятся в путешествии и общении.</li>
-            <li><span class="highlight">Уважение к пользователю:</span> Мы не прерываем ваше обучение навязчивой рекламой каждые 2 минуты.</li>
-            <li><span class="highlight">Offline режим:</span> Учитесь в самолете или метро.</li>
+            <li><span class="highlight">Уважение к пользователю:</span> Мы не прерываем ваше обучение навязчивой рекламой.</li>
         </ul>
         <p>Приложение создано инди-разработчиком для людей, нацеленных на результат.</p>
     </section>
@@ -67,12 +67,23 @@
     <footer>
         <p>© 2025 Plecta. Разработчик: Владимир Беляев.</p>
         <p>
-            <a href="https://sites.google.com/view/plecta-spanish-privacy/privacy-policy?authuser=0">Политика конфиденциальности</a> | 
-            <a href="app-ads.txt">app-ads.txt</a> | 
-            <a href="mailto:vladimir23904@gmail.com">Поддержка</a>
+            <a href="https://sites.google.com/view/plecta-spanish-privacy/privacy-policy?authuser=0" target="_blank">Политика конфиденциальности</a> |
+            <span onclick="showContact()">Связаться с нами</span> |
+            <span onclick="showDonate()">Поддержать проект</span> |
+            <a href="app-ads.txt" style="opacity: 0.5; font-size: 0.8em;">app-ads.txt</a>
         </p>
     </footer>
 </div>
+
+<script>
+    function showContact() {
+        alert("Контакты:\n\nEmail: vladimir23904@gmail.com\nTelegram: @plecta_official");
+    }
+    function showDonate() {
+        const card = "4916991202499179";
+        prompt("Номер карты (Uzcard/Humo) для поддержки проекта.\nСкопируйте номер ниже:", card);
+    }
+</script>
 
 </body>
 </html>
