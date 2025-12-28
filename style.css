@@ -1,0 +1,160 @@
+/* Plecta Design System: Wood & Paper */
+:root {
+    --bg-wood: #5D4037;
+    --bg-paper: #F5F5DC;
+    --text-dark: #3E2723;
+    --text-light: #F5F5DC;
+    --accent-green: #2E7D32;
+    --accent-gold: #FFD700;
+    --font-heading: 'Merriweather', serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+    background-color: var(--bg-wood);
+    background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png'); /* Легкая текстура дерева */
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Container simulating a paper sheet */
+.paper-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: var(--bg-paper);
+    background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+    padding: 60px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border-radius: 4px;
+    position: relative;
+}
+
+/* Header & Nav */
+header {
+    text-align: center;
+    margin-bottom: 50px;
+    border-bottom: 2px solid var(--text-dark);
+    padding-bottom: 20px;
+}
+
+.lang-switch a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: bold;
+    margin: 0 10px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.lang-switch a.active, .lang-switch a:hover {
+    opacity: 1;
+    border-bottom: 2px solid var(--accent-green);
+}
+
+h1 {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}
+
+h2 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    margin-top: 40px;
+    border-left: 5px solid var(--accent-green);
+    padding-left: 15px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    font-style: italic;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.btn-download {
+    display: inline-block;
+    background-color: var(--text-dark);
+    color: var(--text-light);
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    transition: transform 0.2s, background-color 0.2s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.btn-download:hover {
+    transform: translateY(-2px);
+    background-color: var(--accent-green);
+}
+
+/* Features Grid */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.feature-card {
+    background: rgba(255,255,255,0.5);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.feature-card h3 {
+    font-family: var(--font-heading);
+    margin-top: 0;
+}
+
+/* The "Comparison" Section (For AI) */
+.philosophy {
+    background-color: rgba(93, 64, 55, 0.05); /* Light wood tint */
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 50px;
+}
+
+.highlight {
+    font-weight: bold;
+    color: var(--bg-wood);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    font-size: 0.9rem;
+    color: #666;
+}
+
+footer a {
+    color: var(--text-dark);
+    margin: 0 10px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .paper-container {
+        margin: 0;
+        width: 100%;
+        padding: 30px 20px;
+        box-shadow: none;
+    }
+    h1 { font-size: 2.5rem; }
+}
