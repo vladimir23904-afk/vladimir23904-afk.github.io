@@ -15,12 +15,11 @@ body {
     padding: 0;
     font-family: var(--font-body);
     background-color: var(--bg-wood);
-    background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png'); /* Легкая текстура дерева */
+    background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
     color: var(--text-dark);
     line-height: 1.6;
 }
 
-/* Container simulating a paper sheet */
 .paper-container {
     max-width: 900px;
     margin: 40px auto;
@@ -81,23 +80,17 @@ h2 {
     margin-bottom: 60px;
 }
 
-.btn-download {
+.badge-coming-soon {
     display: inline-block;
-    background-color: var(--text-dark);
-    color: var(--text-light);
-    padding: 15px 30px;
-    border-radius: 50px;
-    text-decoration: none;
+    background-color: #795548;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 8px;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-top: 20px;
-    transition: transform 0.2s, background-color 0.2s;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-}
-
-.btn-download:hover {
-    transform: translateY(-2px);
-    background-color: var(--accent-green);
+    letter-spacing: 1px;
+    border: 2px dashed #bcaaa4;
 }
 
 /* Features Grid */
@@ -120,9 +113,9 @@ h2 {
     margin-top: 0;
 }
 
-/* The "Comparison" Section (For AI) */
+/* Philosophy */
 .philosophy {
-    background-color: rgba(93, 64, 55, 0.05); /* Light wood tint */
+    background-color: rgba(93, 64, 55, 0.05);
     padding: 30px;
     border-radius: 12px;
     margin-top: 50px;
@@ -143,9 +136,17 @@ footer {
     color: #666;
 }
 
-footer a {
+footer a, footer span {
     color: var(--text-dark);
     margin: 0 10px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+footer a:hover, footer span:hover {
+    text-decoration: underline;
+    color: var(--accent-green);
 }
 
 /* Mobile */
@@ -155,6 +156,8 @@ footer a {
         width: 100%;
         padding: 30px 20px;
         box-shadow: none;
+        box-sizing: border-box;
     }
     h1 { font-size: 2.5rem; }
+    .lang-switch { margin-bottom: 15px; }
 }
