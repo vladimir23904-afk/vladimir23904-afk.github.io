@@ -2,7 +2,6 @@
 :root {
     --bg-base: #0b121c;
     --bg-surface: #121c2a;
-    --bg-surface-elevated: #182538;
     --border-subtle: rgba(255, 255, 255, 0.08);
     --border-strong: rgba(255, 255, 255, 0.16);
     --text-primary: #f1f5f9;
@@ -10,7 +9,6 @@
     --text-muted: #64748b;
     --accent-gold: #e2b17a;
     --accent-gold-hover: #f0c594;
-    --accent-sky: #7da3c6;
     --font-serif: 'Lora', Georgia, 'Times New Roman', serif;
     --font-sans: 'Noto Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
@@ -180,16 +178,6 @@ header {
     background: var(--accent-gold-hover);
 }
 
-.btn-outline {
-    border: 1px solid var(--border-strong);
-    color: var(--text-secondary);
-}
-
-.btn-outline:hover {
-    border-color: var(--text-primary);
-    color: var(--text-primary);
-}
-
 /* Modules Grid */
 .modules-section {
     padding: 60px 0 80px;
@@ -258,54 +246,6 @@ header {
     line-height: 1.65;
 }
 
-/* Legal Notice Banner */
-.legal-banner {
-    background: var(--bg-surface-elevated);
-    border: 1px solid var(--border-subtle);
-    border-radius: 12px;
-    padding: 36px 40px;
-    margin: 60px 0 80px;
-}
-
-.legal-banner h3 {
-    font-family: var(--font-serif);
-    font-size: 1.4rem;
-    font-weight: 500;
-    margin: 0 0 12px;
-}
-
-.legal-banner p {
-    color: var(--text-secondary);
-    margin: 0 0 24px;
-    max-width: 760px;
-}
-
-.legal-links {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-}
-
-.legal-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 20px;
-    border-radius: 6px;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid var(--border-strong);
-    color: var(--text-primary);
-    text-decoration: none;
-    font-size: 0.92rem;
-    font-weight: 500;
-    transition: background 0.15s ease, border-color 0.15s ease;
-}
-
-.legal-link:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: var(--accent-gold);
-}
-
 /* Footer */
 footer {
     border-top: 1px solid var(--border-subtle);
@@ -330,6 +270,7 @@ footer {
 .footer-nav a {
     color: var(--text-muted);
     text-decoration: none;
+    transition: color 0.15s ease;
 }
 
 .footer-nav a:hover {
@@ -358,8 +299,5 @@ footer {
     .lang-switch {
         border-left: none;
         padding-left: 0;
-    }
-    .legal-banner {
-        padding: 24px;
     }
 }
