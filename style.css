@@ -167,6 +167,9 @@ header {
     font-weight: 500;
     text-decoration: none;
     transition: all 0.2s ease;
+    border: none;
+    font-family: inherit;
+    line-height: inherit;
 }
 
 .btn-primary {
@@ -176,6 +179,19 @@ header {
 
 .btn-primary:hover {
     background: var(--accent-gold-hover);
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 1px solid var(--border-strong);
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    border-color: var(--accent-gold);
+    color: var(--accent-gold);
+    background: rgba(226, 177, 122, 0.06);
 }
 
 /* Modules Grid */

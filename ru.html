@@ -37,6 +37,7 @@
             <p class="hero-text">Образовательное приложение, объединяющее строгие модели радиационного баланса, климатические ряды за 30 лет по 15 000 городам планеты, сравнительное исследование планетных атмосфер и практические метеорологические опыты. Бесплатно и без регистрации; разработчик не собирает личных данных.</p>
             <div class="hero-buttons">
                 <span class="btn btn-primary">Скоро в Google Play</span>
+                <button type="button" class="btn btn-secondary" onclick="showDonate()">Поддержать проект</button>
             </div>
         </div>
     </section>
@@ -99,6 +100,13 @@
         </div>
     </div>
 </footer>
+
+<script>
+    function showDonate() {
+        const card = "4916991202499179";
+        prompt("Номер карты (Uzcard/Humo) для поддержки проекта.\nСкопируйте номер ниже:", card);
+    }
+</script>
 
 </body>
 </html>

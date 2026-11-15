@@ -37,6 +37,7 @@
             <p class="hero-text">An educational application combining analytical radiative balance models, a 30-year climate dataset across 15,000 cities, comparative planetology, and hands-on meteorological experiments. Free and without registration; the developer does not collect personal data.</p>
             <div class="hero-buttons">
                 <span class="btn btn-primary">Coming Soon to Google Play</span>
+                <button type="button" class="btn btn-secondary" onclick="showDonate()">Support Project</button>
             </div>
         </div>
     </section>
@@ -99,6 +100,13 @@
         </div>
     </div>
 </footer>
+
+<script>
+    function showDonate() {
+        const card = "4916991202499179";
+        prompt("Support the project via card (Uzcard/Humo).\nCopy the number below:", card);
+    }
+</script>
 
 </body>
 </html>
