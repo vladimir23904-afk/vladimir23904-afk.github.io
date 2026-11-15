@@ -3,200 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Troposa | Atmosfera fizikasi, iqlim atlasi va sayyorashunoslik</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
-    <meta name="description" content="Atmosfera fizikasi, issiqxona effekti simulyatsiyasi va dunyoning 15 000 shahri bo'yicha 30 yillik ma'lumotlar bazasi. Bepul, oflayn va shaxsiy ma'lumotlarni yig'masdan.">
+    <title>Troposa — Iqlim atlasi va atmosfera fizikasi</title>
+    <meta name="description" content="Radiatsion muvozanat modellarini, dunyoning 15 000 shahri bo'yicha 30 yillik iqlimiy ma'lumotlarni, sayyoralar atmosferasini va amaliy meteorologik tajribalarni birlashtiruvchi ta'limiy ilova. Bepul, ro'yxatdan o'tmasdan va shaxsiy ma'lumotlarni yig'masdan ishlaydi.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..600;1,400..600&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <div class="container nav-wrapper">
-        <a href="uz.html" class="logo">
-            🌍 Troposa <span class="logo-badge">Atlas</span>
+    <div class="container header-row">
+        <a href="uz.html" class="brand">
+            <span class="brand-name">Troposa</span>
+            <span class="brand-sub">Atlas va fizika</span>
         </a>
-        <nav class="nav-links">
-            <a href="#features">Ilova imkoniyatlari</a>
-            <a href="#terms">Foydalanish shartlari (EULA)</a>
-            <a href="#privacy">Maxfiylik siyosati</a>
-            <a href="legal.html" title="Dedicated Legal Page">Legal.html</a>
+        <div class="nav">
+            <a href="#overview">Ilova haqida</a>
+            <a href="#legal">Huquqiy ma'lumot</a>
             <div class="lang-switch">
                 <a href="index.html" >EN</a>
                 <a href="ru.html" >RU</a>
                 <a href="uz.html" class="active">UZ</a>
             </div>
-        </nav>
+        </div>
     </div>
 </header>
 
 <main>
     <section class="hero">
         <div class="container">
-            <div class="hero-tagline">
-                <span>🛰</span> Interaktiv iqlim atlasi va fizika simulyatori
-            </div>
-            <h1>Iqlimni quruq raqamlar emas, fizika qonunlari orqali tushuning</h1>
-            <p>Atmosfera fizikasi, issiqxona effekti simulyatsiyasi va dunyoning 15 000 shahri bo'yicha 30 yillik ma'lumotlar bazasi. Bepul, oflayn va shaxsiy ma'lumotlarni yig'masdan.</p>
-            <div class="hero-actions">
-                <a href="#features" class="btn btn-primary">Tez orada Google Play'da</a>
-                <a href="#terms" class="btn btn-secondary">Foydalanish shartlari va litsenziya</a>
+            <div class="hero-label">Ta'limiy fizika va iqlimshunoslik</div>
+            <h1 class="hero-title">Atmosfera fizikasi, iqlim arxivi va sayyorashunoslik.</h1>
+            <p class="hero-text">Radiatsion muvozanat modellarini, dunyoning 15 000 shahri bo'yicha 30 yillik iqlimiy ma'lumotlarni, sayyoralar atmosferasini va amaliy meteorologik tajribalarni birlashtiruvchi ta'limiy ilova. Bepul, ro'yxatdan o'tmasdan va shaxsiy ma'lumotlarni yig'masdan ishlaydi.</p>
+            <div class="hero-buttons">
+                <span class="btn btn-primary">Tez kunda Google Play'da</span>
+                <a href="#legal" class="btn btn-outline">Huquqiy hujjatlar</a>
             </div>
         </div>
     </section>
 
-    <section id="features" class="features">
+    <section id="overview" class="modules-section">
         <div class="container">
-            <div class="section-title">
-                <h2>Ilova imkoniyatlari</h2>
-                <p>Akademik iqlimshunoslikni interaktiv tadqiqotlar bilan birlashtiruvchi ta'lim platformasi.</p>
+            <div class="section-head">
+                <h2>Asosiy bo'limlar</h2>
+                <p>Ilmiy manbalar va fundamental fizika qonunlariga tayangan tadqiqot bloklari.</p>
             </div>
-            <div class="features-grid">
+            <div class="modules-list">
                 
-            <div class="card">
-                <div class="card-icon">⚡</div>
-                <h3>Atmosfera fizikasi</h3>
-                <p>Jonli simulyatsiyalar: Yer energiyasi balansi, issiqxona effekti, adiabatik jarayonlar, konveksiya va bulutlarning paydo bo'lishi.</p>
-            </div>
-            <div class="card">
-                <div class="card-icon">🗺</div>
-                <h3>15 000 shahar</h3>
-                <p>NASA POWER va ERA5 bo'yicha 30 yillik iqlim me'yorlari. Klimatogrammalar, sutkalik va yillik davrlar, iqlimiy egizaklar tahlili.</p>
-            </div>
-            <div class="card">
-                <div class="card-icon">🪐</div>
-                <h3>Boshqa sayyoralar</h3>
-                <p>Venera, Mars, Titan, Triton va Pluton atmosferalarini o'rganing. Havo zichligi va sayyoralardagi harorat farqlarini taqqoslang.</p>
-            </div>
-            <div class="card">
-                <div class="card-icon">🧪</div>
-                <h3>Uy laboratoriyasi</h3>
-                <p>Amaliy tajribalar: smartfon barometri bilan bino balandligini o'lchash, shishadagi bulut, psixrometr va soya orqali kenglikni aniqlash.</p>
-            </div>
-            <div class="card">
-                <div class="card-icon">🔒</div>
-                <h3>Maxfiylik va qulaylik</h3>
-                <p>Hech qanday hisob qaydnomalari yoki shaxsiy ma'lumotlar yig'ilmaydi. Hamma funksiyalar internetsiz to'liq ishlaydi.</p>
-            </div>
+        <div class="module-card">
+            <div class="module-num">01</div>
+            <div class="module-content">
+                <h3>Energiya balansi va atmosfera termodinamikasi</h3>
+                <p>Sayyoraning radiatsion muvozanati, issiqxona effekti, adiabatik ko'rsatkichlar, namlik va bulutlarning paydo bo'lishi simulyatsiyasi.</p>
             </div>
         </div>
-    </section>
-
-    <section id="legal" class="legal-section">
-        <div class="container">
-            <div class="legal-header">
-                <h2>Huquqiy axborot va litsenziya</h2>
-                <p>Troposa ilovasining rasmiy foydalanish shartlari (litsenziya shartnomasi) va maxfiylik siyosati.</p>
+        <div class="module-card">
+            <div class="module-num">02</div>
+            <div class="module-content">
+                <h3>Global iqlim arxivi (15 000 shahar)</h3>
+                <p>NASA POWER va ERA5 bo'yicha 30 yillik qatorlar. Klimatogrammalar, sutkalik o'zgarishlar, Konrad kontinentallik indeksi va iqlimiy egizaklar tahlili.</p>
             </div>
-            <div class="legal-nav">
-                <button class="legal-btn active" id="btn-terms" onclick="showDoc('terms')">Foydalanish shartlari (EULA)</button>
-                <button class="legal-btn" id="btn-privacy" onclick="showDoc('privacy')">Maxfiylik siyosati</button>
+        </div>
+        <div class="module-card">
+            <div class="module-num">03</div>
+            <div class="module-content">
+                <h3>Qiyosiy sayyorashunoslik</h3>
+                <p>Venera, Mars, Titan, Triton va Pluton atmosferalari. Gaz qobiqlarining zichligi, issiqxona effekti va harorat rejimlarini solishtirish.</p>
             </div>
-            <div class="legal-box">
-                <div id="doc-terms" class="legal-doc active">
-                    <p class="note"><strong>Muhim:</strong> bu tarjima. Talqinlarda tafovut yuzaga kelsa, ingliz tilidagi versiya (EN tugmasi) ustuvor kuchga ega.</p>
-<h1>Foydalanish shartlari</h1>
-<p><strong>Ilova:</strong> «Troposa», Android uchun<br>
-<strong>Ishlab chiquvchi:</strong> Belyayev Vladimir<br>
-<strong>Kuchga kirish sanasi:</strong> 2026-yil 14-noyabr<br>
-<strong>Aloqa:</strong> <a href="mailto:vladimir23904@gmail.com">vladimir23904@gmail.com</a></p>
+        </div>
+        <div class="module-card">
+            <div class="module-num">04</div>
+            <div class="module-content">
+                <h3>Amaliy laboratoriya</h3>
+                <p>O'z qo'lingiz bilan tajribalar: smartfon barometri orqali balandlikni aniqlash, psixrometr yordamida namlikni o'lchash, shishada tuman hosil qilish va soya geometriyasi.</p>
+            </div>
+        </div>
+        <div class="module-card">
+            <div class="module-num">05</div>
+            <div class="module-content">
+                <h3>Maxfiylik va avtonomlik</h3>
+                <p>Hech qanday hisob qaydnomalari yoki foydalanuvchi ma'lumotlarini to'plash mavjud emas. Barcha hisob-kitoblar faqat qurilmangizda oflayn rejimda bajariladi.</p>
+            </div>
+        </div>
+            </div>
 
-<p>Ushbu Foydalanish shartlari (keyingi o'rinlarda — Shartlar) «Troposa» ilovasidan (keyingi o'rinlarda — Ilova) foydalanishni tartibga soladi. Ilovani o'rnatish yoki undan foydalanish orqali siz ushbu Shartlarni va Maxfiylik siyosatini qabul qilasiz. Rozi bo'lmasangiz, Ilovani o'rnatmang va undan foydalanmang.</p>
-
-<h2>1. Kim foydalanishi mumkin</h2>
-<p>Ilova 13 yoshdan katta foydalanuvchilar uchun mo'ljallangan. 13 yoshga to'lmaganlar, shuningdek o'z mamlakati qonunlariga ko'ra voyaga yetmaganlar Ilovadan faqat ota-onasi yoki qonuniy vakilining roziligi va nazorati ostida foydalanishi mumkin; bunda Shartlarni ular nomidan ota-ona yoki vakil qabul qiladi.</p>
-
-<h2>2. Faqat ta'lim maqsadida</h2>
-<p>Ilova — iqlim haqidagi ilmiy-ommabop ta'lim resursi. Uning matnlari, ma'lumotlari, modellari, prognozlari va testlari faqat umumiy ta'lim va axborot uchun mo'ljallangan. Ular kasbiy, ilmiy, tibbiy, moliyaviy, huquqiy, muhandislik maslahati yoki xavfsizlik va sayohat bo'yicha tavsiya <strong>emas</strong>, shuningdek ob-havo prognozi yoki ogohlantirish ham emas.</p>
-<ul>
-  <li>Ilovadagi iqlim ma'lumotlari ochiq ma'lumotlar to'plamlari asosidagi ko'p yillik o'rtacha qiymatlardir; ular muayyan joy va vaqtdagi haqiqiy sharoitdan farq qilishi mumkin.</li>
-  <li>Interaktiv modellar o'qitish uchun ataylab soddalashtirilgan va haqiqatni aniq aks ettirmaydi.</li>
-  <li>Kelajakdagi iqlim prognozlari tabiatan noaniq bo'lib, ssenariylar va modellarga bog'liq.</li>
-  <li>Sog'liq, xavfsizlik, sayohat, ko'chib o'tish, sarmoya, qurilish va xato zarar yoki yo'qotishga olib kelishi mumkin bo'lgan boshqa qarorlarda Ilovaga tayanmang. Rasmiy manbalar va mutaxassislarga murojaat qiling.</li>
-</ul>
-
-<h2>3. Kafolatlardan voz kechish</h2>
-<p>Ilova qonun yo'l qo'ygan eng yuqori darajada <strong>«boricha» va «mavjudligicha»</strong>, hech qanday aniq yoki nazarda tutilgan kafolatlarsiz, jumladan aniqlik, to'liqlik, muayyan maqsadga yaroqlilik, huquqlarni buzmaslik, uzluksiz va xatosiz ishlash kafolatlarisiz taqdim etiladi. Ishlab chiquvchi mazmunda xatolar yo'qligini va barcha qurilmalarga mosligini kafolatlamaydi.</p>
-
-<h2>4. Javobgarlikni cheklash</h2>
-<p>Qonun yo'l qo'ygan eng yuqori darajada Ishlab chiquvchi Ilovadan foydalanish, undan foydalana olmaslik yoki uning mazmuniga ishonish bilan bog'liq to'g'ridan-to'g'ri, bilvosita, tasodifiy, maxsus va boshqa zararlar, shuningdek ma'lumotlar, foyda, imkoniyatlar yo'qolishi yoki sog'liqqa yetkazilgan zarar uchun, hatto bunday zarar ehtimoli haqida ogohlantirilgan bo'lsa ham, javobgar emas. Ilova bepul bo'lgani sababli, Ishlab chiquvchining umumiy javobgarligi, agar uni qonun bo'yicha istisno qilib bo'lmasa, Ilova uchun to'lagan summangizdan (nol) oshmaydi. Ushbu Shartlar mamlakatingiz qonunining majburiy normalariga ko'ra cheklab bo'lmaydigan javobgarlikni cheklamaydi.</p>
-
-<h2>5. Reklama va uchinchi tomon kontenti</h2>
-<p>Ilova uchinchi tomon reklamasini (Google AdMob) ko'rsatadi. Reklama shaxsiylashtirilmagan. Ishlab chiquvchi reklama mazmuni, reklama qilinayotgan mahsulot va xizmatlar, shuningdek reklama olib boradigan uchinchi tomon saytlari va ilovalarini boshqarmaydi va ular uchun javobgar emas. Reklama beruvchilar bilan har qanday munosabatlar faqat siz va reklama beruvchi o'rtasida bo'ladi.</p>
-
-<h2>6. Ma'lumotlar manbalari</h2>
-<p>Ilova uchinchi tomon ma'lumotlaridan ularning litsenziyalari asosida foydalanadi: NASA POWER (NASA Lengli tadqiqot markazi), Copernicus iqlim o'zgarishi xizmatining ERA5-Land ma'lumotlari (CC BY 4.0, Copernicus Climate Change Service'ning o'zgartirilgan ma'lumotlarini o'z ichiga oladi), Earth System Grid Federation orqali olingan CMIP6 modellari natijalari (Butunjahon iqlim tadqiqotlari dasturi va modellashtirish guruhlariga minnatdorchilik Ilovada keltirilgan), GeoNames (CC BY 4.0) va Natural Earth (jamoat mulki). Yevropa Komissiyasi, ECMWF, NASA, WCRP va boshqa ma'lumot yetkazib beruvchilar Ilovadagi ma'lumotlardan foydalanish uchun javobgar emas va Ilovani ma'qullamaydi. Ilmiy faktlar e'lon qilingan manbalarga havolalar bilan berilgan.</p>
-
-<h2>7. Intellektual mulk va litsenziya</h2>
-<p>Ilova, uning matnlari, rasmlari, interaktiv modellari, dizayni va kodi mualliflik huquqi bilan himoyalangan va Ishlab chiquvchi yoki uning litsenziarlariga tegishli. Ishlab chiquvchi sizga Ilovadan qurilmalaringizda notijorat shaxsiy va ta'lim maqsadlarida foydalanish uchun shaxsiy, noeksklyuziv, boshqaga o'tkazib bo'lmaydigan, qaytarib olinadigan litsenziya beradi. O'qituvchilar Ilovani darslarda ko'rsatishi mumkin. Ilovani yoki uning mazmunining muhim qismlarini nusxalash, o'zgartirish, tarqatish, sotish, ijaraga berish yoki e'lon qilish, uni dekompilyatsiya qilish (qonun ruxsat bergan hollardan tashqari), bildirishnomalarni olib tashlash, Ilovadan raqobatdosh mahsulot yaratish uchun foydalanish taqiqlanadi. Ochiq kodli komponentlar o'z litsenziyalari asosida ishlatiladi. Lora, Noto Sans, Noto Sans Math va JetBrains Mono shriftlari SIL Open Font License 1.1 litsenziyasi, Lucide ikonkalari esa ISC litsenziyasi asosida qo‘llaniladi.</p>
-
-<h2>8. Ruxsat etilgan foydalanish</h2>
-<p>Siz Ilovadan foydalanishda qonunni buzmaslik, uning ishlashiga va reklama ko'rsatilishiga xalaqit bermaslik (jumladan, reklamani firibgarlik bilan bosish orqali) va Ilova mazmunini rasmiy prognoz yoki kasbiy xulosa sifatida ko'rsatmaslik majburiyatini olasiz.</p>
-
-<h2>9. O'zgarishlar, mavjudlik va tugatish</h2>
-<p>Ishlab chiquvchi istalgan vaqtda Ilova yoki uning qismlarini o'zgartirishi, yangilashi, to'xtatib turishi yoki to'xtatishi, shuningdek ushbu Shartlarni o'zgartirishi mumkin. Yangi tahrir xuddi shu manzilda yangi sana bilan e'lon qilinadi; Ilovadan foydalanishni davom ettirib, siz uni qabul qilasiz. Shartlar buzilganda litsenziya avtomatik tugaydi; siz istalgan vaqtda Ilovani o'chirib, undan foydalanishni to'xtatishingiz mumkin.</p>
-
-<h2>10. Amaldagi huquq va nizolar</h2>
-<p>Ushbu Shartlar kolliziya normalarini hisobga olmagan holda O'zbekiston Respublikasi qonunchiligi bilan tartibga solinadi, yashash mamlakatingizning iste'molchilar huquqlarini himoya qilish bo'yicha majburiy normalari boshqacha belgilagan hollar bundan mustasno. Sudga murojaat qilishdan oldin, iltimos, masalani tinch yo'l bilan hal qilish uchun Ishlab chiquvchiga yozing.</p>
-
-<h2>11. Boshqa qoidalar</h2>
-<p>Agar Shartlarning biror qoidasi haqiqiy emas deb topilsa, qolganlari o'z kuchini saqlaydi. Qoidani qo'llamaslik undan voz kechishni anglatmaydi. Ushbu Shartlar va Maxfiylik siyosati Ilova bo'yicha siz va Ishlab chiquvchi o'rtasidagi to'liq kelishuvni tashkil etadi. Google ushbu Shartlarning tarafi emas va Ilova uchun javobgar emas.</p>
-
-<h2>12. Aloqa</h2>
-<p>Belyayev Vladimir — <a href="mailto:vladimir23904@gmail.com">vladimir23904@gmail.com</a></p>
-                </div>
-                <div id="doc-privacy" class="legal-doc">
-                    <p class="note"><strong>Muhim:</strong> bu tarjima. Talqinlarda tafovut yuzaga kelsa, ingliz tilidagi versiya (EN tugmasi) ustuvor kuchga ega.</p>
-<h1>Maxfiylik siyosati</h1>
-<p><strong>Ilova:</strong> «Troposa», Android uchun<br>
-<strong>Ishlab chiquvchi:</strong> Belyayev Vladimir<br>
-<strong>Kuchga kirish sanasi:</strong> 2026-yil 14-noyabr<br>
-<strong>Aloqa:</strong> <a href="mailto:vladimir23904@gmail.com">vladimir23904@gmail.com</a></p>
-
-<p>Ushbu siyosat «Troposa» ilovasi (keyingi o'rinlarda — Ilova) ma'lumotlar bilan qanday ishlashini tushuntiradi. Ilova bepul, reklama hisobiga ishlaydi va «boricha» (AS IS) taqdim etiladi. Ilovani o'rnatish yoki undan foydalanish orqali siz ushbu siyosatga rozilik bildirasiz.</p>
-
-<h2>1. Qisqacha</h2>
-<ul>
-  <li>Ilovada ro'yxatdan o'tish, tizimga kirish va hisob qaydnomalari yo'q.</li>
-  <li>Ishlab chiquvchi sizning shaxsiy ma'lumotlaringizni to'plamaydi, olmaydi va saqlamaydi.</li>
-  <li>Natijalaringiz va sozlamalaringiz faqat qurilmangizda saqlanadi.</li>
-  <li>Ilova Google AdMob orqali <strong>faqat shaxsiylashtirilmagan reklama</strong> ko'rsatadi: reklama qiziqishlaringiz va xatti-harakatlaringizga qarab tanlanmaydi, retargeting ishlatilmaydi.</li>
-</ul>
-
-<h2>2. Qurilmada nimalar saqlanadi</h2>
-<p>Tanlovingizni eslab qolish uchun Ilova qurilmada quyidagilarni saqlaydi: interfeys tili, tungi rejim, test natijalari, xatcho'plar, ochilgan interaktivlar, taqqoslash uchun tanlangan shaharlar va xarita sozlamalari. Bu ma'lumotlar qurilmadan chiqmaydi va Ishlab chiquvchiga yuborilmaydi. Ularni istalgan vaqtda telefon sozlamalarida Ilova ma'lumotlarini tozalash yoki Ilovani o'chirish orqali yo'q qilishingiz mumkin.</p>
-<p><strong>Zaxira nusxa.</strong> Agar qurilmangizda Android zaxira nusxasi yoqilgan bo'lsa, tizim bu sozlamalarni yangi telefonda tiklash uchun shaxsiy zaxira nusxangizga (masalan, Google Diskingizga) saqlashi mumkin. Buni tizim sizning sozlamalaringiz bo'yicha boshqaradi; Ishlab chiquvchining zaxira nusxangizga kirish imkoni yo'q.</p>
-
-<h2>3. Reklama (Google AdMob)</h2>
-<p>Ilova Google AdMob (Google LLC) xizmati reklamasini ko'rsatadi. Ilovaning barcha reklama so'rovlari bolalar (yoshga bog'liq) auditoriyasi so'rovi sifatida belgilanadi va Ilova faqat keng auditoriyaga mos yosh reytingidagi shaxsiylashtirilmagan reklamani so'raydi. Google ma'lumotlariga ko'ra, bunday sozlamada qiziqishlarga asoslangan reklama va retargeting o'chiriladi, reklama identifikatori esa uzatilmaydi.</p>
-<p>Reklamani ko'rsatish, ko'rsatishlar sonini cheklash, samaradorlikni baholash va firibgarlikning oldini olish uchun Google texnik ma'lumotlarni avtomatik qayta ishlashi mumkin: qurilmaning IP-manzili (u orqali taxminiy joylashuv — mamlakat yoki shahar aniqlanishi mumkin), qurilma modeli, operatsion tizim, til, ilova versiyasi va reklama bilan o'zaro aloqa (masalan, reklama ko'rsatilgani yoki bosilgani). Bu ishlovni Google o'z qoidalari bo'yicha mustaqil amalga oshiradi:</p>
-<ul>
-  <li>Google maxfiylik siyosati: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
-  <li>Google o'z xizmatlaridan foydalanadigan ilovalar ma'lumotlarini qanday ishlatadi: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></li>
-  <li>Google AdMob va maxfiylik: <a href="https://support.google.com/admob/answer/6128543">https://support.google.com/admob/answer/6128543</a></li>
-</ul>
-<p>Ilova aniq (GPS) joylashuvni, kontaktlar, fotosuratlar, fayllar, mikrofon va kamera ma'lumotlarini to'plamaydi.</p>
-<p>Ishlab chiquvchi uchinchi tomon reklamasining mazmunini boshqarmaydi va reklama qilinayotgan mahsulot va xizmatlarni tavsiya etmaydi. Reklama orqali o'tsangiz, reklama beruvchining shartlari va maxfiylik siyosati amal qiladi.</p>
-
-<h2>4. Bolalar</h2>
-<p>Ilova 13 yoshdan katta o'smirlar va kattalar uchun mo'ljallangan. 13 yoshga to'lmagan bolalar Ilovadan faqat ota-onasi yoki qonuniy vakillarining ruxsati va nazorati ostida foydalanishi mumkin. Ishlab chiquvchi hech kimdan, jumladan bolalardan, shaxsiy ma'lumotlarni ataylab to'plamaydi. Ilovadagi reklama hamma uchun shaxsiylashtirilmagan. Agar bola bizga shaxsiy ma'lumot yuborgan deb hisoblasangiz (masalan, elektron pochta orqali), bizga yozing — biz uni o'chiramiz.</p>
-
-<h2>5. Ma'lumotlarni saqlash va o'chirish</h2>
-<p>Ishlab chiquvchi foydalanuvchilarning shaxsiy ma'lumotlarini saqlamaydi. Qurilmadagi ma'lumotlar siz ularni tozalaguningizcha yoki Ilovani o'chirguningizcha saqlanadi. Google reklama uchun qayta ishlaydigan ma'lumotlar Google qoidalari bo'yicha saqlanadi. Bizga elektron pochta orqali yozsangiz, yozishmani faqat javob berish uchun zarur muddat saqlaymiz va so'rovingiz bo'yicha o'chiramiz.</p>
-
-<h2>6. Ma'lumotlarni transchegaraviy uzatish</h2>
-<p>Google reklama ma'lumotlarini siz yashaydigan mamlakatdan tashqaridagi serverlarda qayta ishlashi mumkin. <strong>O'zbekiston Respublikasi, Rossiya Federatsiyasi va boshqa mamlakatlardagi foydalanuvchilar uchun:</strong> Ilovani o'rnatish va undan foydalanish orqali siz 3-bo'limda tavsiflanganidek Google tomonidan bunday qayta ishlash va transchegaraviy uzatishga rozilik bildirasiz. Rozi bo'lmasangiz, Ilovadan foydalanmang.</p>
-
-<h2>7. Huquqlaringiz</h2>
-<p>Yashash mamlakatingizga qarab sizda shaxsiy ma'lumotlarga kirish, ularni tuzatish va o'chirish, shuningdek ularni qayta ishlashga e'tiroz bildirish huquqlari bo'lishi mumkin. Ishlab chiquvchida shaxsiy ma'lumotlaringiz yo'qligi sababli, reklama ma'lumotlari bo'yicha so'rovlarni yuqoridagi havolalar orqali Google'ga yuboring. Qurilmaning reklama identifikatorini Android sozlamalarida qayta o'rnatish yoki o'chirish mumkin. Boshqa savollar bo'yicha bizga yozing.</p>
-
-<h2>8. Xavfsizlik</h2>
-<p>Ilova natijalaringiz va sozlamalaringizni Ishlab chiquvchiga uzatmaydi. Tarmoq ulanishlaridan faqat reklama xizmati foydalanadi. Uzatish yoki saqlashning hech bir usuli to'liq himoyalangan emas va Ishlab chiquvchi uchinchi tomon xizmatlarining mutlaq xavfsizligini kafolatlay olmaydi.</p>
-
-<h2>9. O'zgarishlar</h2>
-<p>Biz ushbu siyosatni, masalan, yangi funksiyalar paydo bo'lganda yangilashimiz mumkin. Yangi tahrir xuddi shu manzilda yangi sana bilan e'lon qilinadi. O'zgarishlardan keyin Ilovadan foydalanishni davom ettirish yangi tahrirni qabul qilganingizni bildiradi.</p>
-
-<h2>10. Aloqa</h2>
-<p>Belyayev Vladimir — <a href="mailto:vladimir23904@gmail.com">vladimir23904@gmail.com</a></p>
+            <div id="legal" class="legal-banner">
+                <h3>Huquqiy axborot va litsenziya</h3>
+                <p>Ilova ma'rifiy maqsadlarda bepul tarqatiladi. Foydalanuvchilarning shaxsiy ma'lumotlari yig'ilmaydi va uchinchi shaxslarga berilmaydi. Foydalanish shartlari va Maxfiylik siyosatining to'liq matnlari maxsus sahifada keltirilgan.</p>
+                <div class="legal-links">
+                    <a href="legal.html#terms-uz" class="legal-link" target="_blank">
+                        <span>&sect;</span> Foydalanish shartlari (EULA)
+                    </a>
+                    <a href="legal.html#privacy-uz" class="legal-link" target="_blank">
+                        <span>&sect;</span> Maxfiylik siyosati
+                    </a>
                 </div>
             </div>
         </div>
@@ -204,40 +105,16 @@
 </main>
 
 <footer>
-    <div class="container">
-        <p>© 2026 Troposa. Ishlab chiquvchi: Belyayev Vladimir.</p>
-        <p>
-            <a href="#privacy" onclick="showDoc('privacy')">Maxfiylik siyosati</a> &nbsp;|&nbsp; 
-            <a href="#terms" onclick="showDoc('terms')">Foydalanish shartlari (EULA)</a> &nbsp;|&nbsp; 
-            <a href="legal.html">legal.html</a> &nbsp;|&nbsp; 
-            <a href="mailto:vladimir23904@gmail.com">Bog'lanish</a> &nbsp;|&nbsp; 
-            <a href="app-ads.txt" style="opacity: 0.6;">app-ads.txt</a>
-        </p>
+    <div class="container footer-row">
+        <div>&copy; 2026 Troposa. Ishlab chiquvchi: Belyayev Vladimir.</div>
+        <div class="footer-nav">
+            <a href="legal.html#terms-uz">Foydalanish shartlari (EULA)</a>
+            <a href="legal.html#privacy-uz">Maxfiylik siyosati</a>
+            <a href="mailto:vladimir23904@gmail.com">Aloqa</a>
+            <a href="app-ads.txt" style="opacity: 0.5;">app-ads.txt</a>
+        </div>
     </div>
 </footer>
-
-<script>
-    function showDoc(doc) {
-        document.getElementById('doc-terms').classList.toggle('active', doc === 'terms');
-        document.getElementById('doc-privacy').classList.toggle('active', doc === 'privacy');
-        document.getElementById('btn-terms').classList.toggle('active', doc === 'terms');
-        document.getElementById('btn-privacy').classList.toggle('active', doc === 'privacy');
-    }
-
-    function handleHash() {
-        var hash = window.location.hash;
-        if (hash === '#privacy') {
-            showDoc('privacy');
-            document.getElementById('legal').scrollIntoView({ behavior: 'smooth' });
-        } else if (hash === '#terms') {
-            showDoc('terms');
-            document.getElementById('legal').scrollIntoView({ behavior: 'smooth' });
-        }
-    }
-
-    window.addEventListener('hashchange', handleHash);
-    window.addEventListener('DOMContentLoaded', handleHash);
-</script>
 
 </body>
 </html>
